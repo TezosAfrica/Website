@@ -1,19 +1,31 @@
 {
-  "name": "tezos-web",
+  "name": "tezos-africa",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 7005",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.0.4",
+    "@chakra-ui/react": "^1.6.10",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@splidejs/react-splide": "^0.6.5",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "framer-motion": "^5",
+    "html-entities": "^2.3.2",
+    "next": "12.0.1",
+    "next-seo": "^4.28.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-icons": "^4.3.1",
+    "react-mailchimp-subscribe": "^2.1.3"
   },
   "devDependencies": {
-    "eslint": "7",
-    "eslint-config-next": "12.0.4"
+    "eslint": "<8.0.0",
+    "eslint-config-next": "12.0.1",
+    "formik": "^2.2.9"
   }
 }
