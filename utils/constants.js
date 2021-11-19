@@ -165,7 +165,7 @@ export const teams = [
   {
     id: 1,
     img: "1.jpg",
-    name: "Nelly Chaute-Diop",
+    name: "Nelly Chatue-Diop",
     position: "President, Tezos Africa",
   },
   {
