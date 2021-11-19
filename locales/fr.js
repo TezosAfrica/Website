@@ -105,7 +105,7 @@ export default {
       {
         id: 1,
         img: "1.jpg",
-        name: "Nelly Chaute-Diop",
+        name: "Nelly Chatue-Diop",
         position: "Présidente de Tezos Afrique",
       },
       {
