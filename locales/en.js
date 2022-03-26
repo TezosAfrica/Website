@@ -143,6 +143,18 @@ export default {
         name: "Chimezie Chuta",
         position: "Lead, Nigeria",
       },
+      {
+        id: 12,
+        img: "13.jpg",
+        name: "Brian Ahimbisibwe",
+        position: "Lead, Uganda",
+      },
+      {
+        id: 13,
+        img: "14.png",
+        name: "Leonard Mutambanengwe",
+        position: "Lead, Zimbabwe",
+      },
     ],
   },
   partners: {

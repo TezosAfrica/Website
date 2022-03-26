@@ -188,6 +188,8 @@ export const teams = [
   { id: 8, img: "8.JPG", name: "Zabo Honorat", position: "Lead, Ivory Coast" },
   { id: 10, img: "9.jpg", name: "Adebayo Adelekan", position: "Lead, Nigeria" },
   { id: 11, img: "10.jpg", name: "Chimezie Chuta", position: "Lead, Nigeria" },
+  { id: 12, img: "13.jpg", name: "Brian Ahimbisibwe", position: "Lead, Uganda" },
+  { id: 13, img: "14.png", name: "Leonard Mutambanengwe", position: "Lead, Zimbabwe" },
 ];
 
 export const countries = [
@@ -199,6 +201,7 @@ export const countries = [
   { id: 6, img: "tunisia.png", link: "https://twitter.com/TezosTNA" },
   { id: 7, img: "ivorycoast.png", link: "#" },
   { id: 8, img: "kenya.jpg", link: "#" },
+  { id: 9, img: "zimbabwe.png", link: "#" },
 ];
 
 export const events = [
