@@ -168,6 +168,18 @@ export default {
         name: "Chimezie Chuta",
         position: "Chef de file, Nigeria",
       },
+      {
+        id: 12,
+        img: "13.jpg",
+        name: "Brian Ahimbisibwe",
+        position: "Chef de file, Uganda",
+      },
+      {
+        id: 13,
+        img: "14.png",
+        name: "Leonard Mutambanengwe",
+        position: "Chef de file, Zimbabwe",
+      },
     ],
   },
   partners: {
