@@ -199,6 +199,7 @@ export const countries = [
   { id: 6, img: "tunisia.png", link: "https://twitter.com/TezosTNA" },
   { id: 7, img: "ivorycoast.png", link: "#" },
   { id: 8, img: "kenya.jpg", link: "#" },
+  {id: 9, img: "zimbabwe.png", link: "#" },
 ];
 
 export const events = [
