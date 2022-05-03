@@ -13,6 +13,16 @@ import {
   OrderedList,
   Stack,
   Text,
+  Tabs,
+  TabList,
+  Tab,
+  TabPanels,
+  TabPanel,
+  Grid,
+  GridItem,
+  UnorderedList,
+  VStack,
+  StackDivider,
 } from "@chakra-ui/react";
 import Footer from "@container/Footer";
 import { useRouter } from "next/router";
@@ -42,7 +52,7 @@ const Hackathon = () => {
           h="full"
           w="full"
           fit="cover"
-          src="https://images.unsplash.com/photo-1456428746267-a1756408f782?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2670&q=80"
+          src={filterData?.coverImage}
           alt="hackathon"
         />
         <Box pos="absolute" inset={0} bg="rgba(0,0,0,.4)" />
@@ -60,80 +70,185 @@ const Hackathon = () => {
       </Flex>
 
       <Container maxW="3xl" my={20}>
-        <Stack spacing="3rem" divider={<Divider />}>
-          <Stack spacing="1rem">
-            <Text fontSize={{ md: "xl" }} fontWeight="bold">
-              {filterData?.about?.title}
-            </Text>
-            <Text>{filterData?.about?.text}</Text>
-          </Stack>
+        <Tabs>
+          <TabList>
+            <Tab fontSize={"xl"} fontWeight={500}>
+              Hackathon
+            </Tab>
+            <Tab fontSize={"xl"} fontWeight={500}>
+              Teams
+            </Tab>
+          </TabList>
 
-          <Stack spacing="1rem">
-            <Text fontSize={{ md: "xl" }} fontWeight="bold">
-              {filterData?.register?.title}
-            </Text>
-            <Text
-              dangerouslySetInnerHTML={{ __html: filterData?.register?.text }}
-            />
-          </Stack>
+          <TabPanels>
+            <TabPanel>
+              <Stack spacing="3rem" divider={<Divider />}>
+                <Stack spacing="1rem">
+                  <Text fontSize={{ md: "xl" }} fontWeight="bold">
+                    {filterData?.about?.title}
+                  </Text>
+                  <Text>{filterData?.about?.text}</Text>
+                </Stack>
 
-          <Stack spacing="1rem">
-            <Text fontSize={{ md: "xl" }} fontWeight="bold">
-              {filterData?.kicks?.title}
-            </Text>
-            <Text>{filterData?.kicks?.text}</Text>
-          </Stack>
+                <Stack spacing="1rem">
+                  <Text fontSize={{ md: "xl" }} fontWeight="bold">
+                    {filterData?.register?.title}
+                  </Text>
+                  <Text
+                    dangerouslySetInnerHTML={{
+                      __html: filterData?.register?.text,
+                    }}
+                  />
+                </Stack>
 
-          <Stack spacing="1rem">
-            <Text fontSize={{ md: "xl" }} fontWeight="bold">
-              {filterData?.rules?.title}
-            </Text>
-            <OrderedList lineHeight="taller" pl={4}>
-              {filterData?.rules?.list?.map((item) => (
-                <ListItem key={item}>{item}</ListItem>
-              ))}
-            </OrderedList>
-          </Stack>
+                <Stack spacing="1rem">
+                  <Text fontSize={{ md: "xl" }} fontWeight="bold">
+                    {filterData?.kicks?.title}
+                  </Text>
+                  <Text>{filterData?.kicks?.text}</Text>
+                </Stack>
 
-          <Stack spacing="1rem">
-            <Text fontSize={{ md: "xl" }} fontWeight="bold">
-              {filterData?.users?.title}
-            </Text>
+                <Stack spacing="1rem">
+                  <Text fontSize={{ md: "xl" }} fontWeight="bold">
+                    {filterData?.rules?.title}
+                  </Text>
+                  <OrderedList lineHeight="taller" pl={4}>
+                    {filterData?.rules?.list?.map((item) => (
+                      <ListItem key={item}>{item}</ListItem>
+                    ))}
+                  </OrderedList>
+                </Stack>
 
-            <OrderedList lineHeight="taller" pl={4}>
-              {filterData?.users?.list?.map((item) => (
-                <ListItem key={item}>{item}</ListItem>
-              ))}
-            </OrderedList>
-          </Stack>
+                <Stack spacing="1rem">
+                  <Text fontSize={{ md: "xl" }} fontWeight="bold">
+                    {filterData?.users?.title}
+                  </Text>
 
-          <Stack spacing="1rem">
-            <Text fontSize={{ md: "xl" }} fontWeight="bold">
-              {filterData?.prizes?.title}
-            </Text>
+                  <OrderedList lineHeight="taller" pl={4}>
+                    {filterData?.users?.list?.map((item) => (
+                      <ListItem key={item}>{item}</ListItem>
+                    ))}
+                  </OrderedList>
+                </Stack>
 
-            <OrderedList lineHeight="taller" pl={4}>
-              {filterData?.prizes?.list?.map((item) => (
-                <ListItem key={item}>{item}</ListItem>
-              ))}
-            </OrderedList>
-          </Stack>
+                <Stack spacing="1rem">
+                  <Text fontSize={{ md: "xl" }} fontWeight="bold">
+                    {filterData?.prizes?.title}
+                  </Text>
 
-          <Stack spacing="1rem">
-            <Text fontSize={{ md: "xl" }} fontWeight="bold">
-              {filterData?.grand?.title}
-            </Text>
-            <Text
-              dangerouslySetInnerHTML={{ __html: filterData?.grand?.text }}
-            />
-          </Stack>
-        </Stack>
+                  <OrderedList lineHeight="taller" pl={4}>
+                    {filterData?.prizes?.list?.map((item) => (
+                      <ListItem key={item}>{item}</ListItem>
+                    ))}
+                  </OrderedList>
+                </Stack>
 
-        <Box mt={6}>
-          <Link href="https://forms.gle/UUrgv8W5i7RrYkGy5" isExternal>
-            <Button colorScheme="btnColorScheme">{t.register}</Button>
-          </Link>
-        </Box>
+                <Stack spacing="1rem">
+                  <Text fontSize={{ md: "xl" }} fontWeight="bold">
+                    {filterData?.grand?.title}
+                  </Text>
+                  <Text
+                    dangerouslySetInnerHTML={{
+                      __html: filterData?.grand?.text,
+                    }}
+                  />
+                </Stack>
+              </Stack>
+
+              <Box mt={6}>
+                <Link href="https://forms.gle/UUrgv8W5i7RrYkGy5" isExternal>
+                  <Button colorScheme="btnColorScheme">{t.register}</Button>
+                </Link>
+              </Box>
+            </TabPanel>
+            <TabPanel>
+              <Stack spacing="3rem" divider={<Divider />}>
+                <Stack spacing="1rem">
+                  <Text fontSize={{ md: "xl" }} fontWeight="bold">
+                    {filterData?.participating?.registered?.title}
+                  </Text>
+                  <Text>{filterData?.participating?.registered?.summary}</Text>
+                </Stack>
+
+                <Stack spacing="1rem">
+                  <Text fontSize={{ md: "xl" }} fontWeight="bold">
+                    {filterData?.participating?.groups?.title}
+                  </Text>
+                  <VStack
+                    divider={<StackDivider borderColor="gray.200" />}
+                    px={5}
+                    align="stretch"
+                    spacing={4}
+                  >
+                    {filterData?.participating?.groups?.countries.map(
+                      (item, index) => (
+                        <Grid
+                          key={index + 1}
+                          templateColumns="repeat(12, 1fr)"
+                          gap={6}
+                        >
+                          <GridItem colSpan={{ base: 12, md: 6, lg: 5 }}>
+                            <Link
+                              href={"https://google.com"}
+                              isExternal
+                              key={"1"}
+                              mr={6}
+                              _last={{ mr: 0 }}
+                              w={{ md: 64 }}
+                              rounded="lg"
+                              _hover={{ bg: "gray.50" }}
+                              transition="background-color 250ms ease-in"
+                            >
+                              <Box
+                                bg="gray.50"
+                                p={4}
+                                borderWidth={1}
+                                rounded="lg"
+                              >
+                                <Image
+                                  h={24}
+                                  w="full"
+                                  fit="scale-down"
+                                  src={item.logo}
+                                  alt={"image alt"}
+                                />
+                              </Box>
+                            </Link>
+                            <Text textAlign="center" mt={2} fontWeight={600}>
+                              {item.country}
+                            </Text>
+                          </GridItem>
+                          <GridItem colSpan={{ base: 12, md: 6, lg: 7 }}>
+                            <UnorderedList lineHeight="taller" pl={4}>
+                              {item.teams.map((team) => (
+                                <ListItem key={team} fontSize="lg">
+                                  {team}
+                                </ListItem>
+                              ))}
+                            </UnorderedList>
+                          </GridItem>
+                        </Grid>
+                      )
+                    )}
+                  </VStack>
+                </Stack>
+
+                <Stack spacing="1rem">
+                  <Text fontSize={{ md: "xl" }} fontWeight="bold">
+                    {filterData?.participating?.winners?.title}
+                  </Text>
+                  <Image
+                    h={800}
+                    w="full"
+                    fit="scale-down"
+                    src={filterData?.participating?.winners?.imageUrl}
+                    alt={"image alt"}
+                  />
+                </Stack>
+              </Stack>
+            </TabPanel>
+          </TabPanels>
+        </Tabs>
       </Container>
       <Footer translate={t} />
     </Layout>

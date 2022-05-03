@@ -360,6 +360,57 @@ const EnglishLocale = {
           title: "Grand Prize",
           text: "All participating teams are eligible for a grant of <span style='font-weight: bold;'>$3000</span> once they are able to present very good projects whether they are part of the top three winners or not. The participating teams will need to resubmit better applications of the same project or can choose to submit a totally new project between Jan 10th and Jan 23rd, 2022 to qualify for the grant. The Grand prize winners will be announced on the 31st of January, 2022.",
         },
+        participating: {
+          registered: {
+            title: "Registered Teams",
+            summary:
+              "Out of the 16 teams which applied for the Tezos Afrikathon, we had 7 teams turning up for the demo day and it was really exciting seeing projects built on the Tezos blockchain!",
+          },
+          groups: {
+            title: "Participating Teams",
+            countries: [
+              {
+                country: "Tezos Tunisie Nord Afrique",
+                logo: "/images/branches/tunisia.png",
+                teams: ["Team Heisenberg", "Tea Wonderbake"],
+              },
+              {
+                country: "Tezos Kenya",
+                logo: "/images/branches/kenya.jpg",
+                teams: ["Team Sauna"],
+              },
+              {
+                country: "Tezos Cameroon",
+                logo: "/images/branches/cameroon.png",
+                teams: ["Kutaba", "CryptoLions"],
+              },
+              {
+                country: "Tezos Nigeria",
+                logo: "/images/branches/nigeria.png",
+                teams: ["Team PiSquare", "Team Phoenix", "Brickx", "Team Pandora"],
+              },
+              {
+                country: "Tezos Cote D'Ivoire",
+                logo: "/images/branches/burkina.png",
+                teams: ["Tezos CI"],
+              },
+              {
+                country: "Tezos Senegal",
+                logo: "/images/branches/senegal.png",
+                teams: ["Diwanu Xarala", "BDCrypto", "The Blockers"],
+              },
+              {
+                country: "Tezos Ghana",
+                logo: "/images/branches/ghana.png",
+                teams: ["Ingenious Game", "BlackStar", "Trace101Africa"],
+              },
+            ],
+          },
+          winners: {
+            title: "Winners",
+            imageUrl: "/images/hackathon/tezos-africathon-2021/winners.jpg",
+          }
+        },
       },
       {
         id: 2,
