@@ -17,7 +17,7 @@ import { FcCalendar, FcOk, FcLink, FcKey } from "react-icons/fc";
 // util
 import numberToPosition from "@utils/numberToPosition";
 
-const Feature = ({ position, data }) => {
+const Feature = ({ locale, position, data }) => {
   return (
     <Stack>
       <Flex
@@ -40,16 +40,19 @@ const Feature = ({ position, data }) => {
       <List spacing={2} color={"gray.500"} fontSize="15" textAlign="left">
         <ListItem>
           <ListIcon as={FcCalendar} color="green.500" />
-          <strong>Launched:</strong> {data.launched}
+          <strong>{locale == "en" ? "Launched:" : "Lancé:"}</strong>{" "}
+          {data.launched}
         </ListItem>
         <ListItem>
           <ListIcon as={FcOk} color="green.500" />
-          <strong>Status:</strong> {data.status}
+          <strong>{locale == "en" ? "Status:" : "Statut:"}</strong>{" "}
+          {data.status}
         </ListItem>
         {data.address && (
           <ListItem>
             <ListIcon as={FcKey} color="green.500" />
-            <strong>Address:</strong> {data.address}
+            <strong>{locale == "en" ? "Address:" : "Adresse:"}</strong>{" "}
+            {data.address}
           </ListItem>
         )}
         {data.details && (
@@ -62,7 +65,7 @@ const Feature = ({ position, data }) => {
               target={"_blank"}
               rel="noreferrer"
             >
-              View Explorer
+              {locale == "en" ? "View Explorer" : "Voir l'explorateur"}
             </Link>
           </ListItem>
         )}
@@ -95,6 +98,7 @@ const Bakers = ({ translate }) => {
               {translate.bakers.availableBakers.map((item, itemIndex) => (
                 <Feature
                   key={item.id}
+                  locale={translate.bakers.locale}
                   position={numberToPosition(itemIndex + 1)}
                   data={item}
                 />

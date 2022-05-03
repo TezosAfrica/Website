@@ -20,7 +20,6 @@ const Grants = ({ translate }) => {
       <Container maxW="7xl">
         <SectionTitle
           title={translate.grants.title}
-          subtitle={translate.grants.subtitle}
         />
         <Box mt={20}>
           <Box mb={10}>

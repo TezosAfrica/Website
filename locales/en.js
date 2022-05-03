@@ -100,6 +100,7 @@ const EnglishLocale = {
     ],
   },
   bakers: {
+    locale: "en",
     title: "Bakers",
     description:
       "In 2021, the Tezos Africa community & friends set out to participate in the Tezos protocol decentralization by launching as many bakers as possible throughout the continent. We knew this would add African voices when voting happened on governance proposals as well as provide geographical decentralisation. We believe it also gives Tezos a unique place in the Blockchain ecosystem as not many others can claim to have mining activities in Africa. We are dreamers aiming to have Africa at the forefront of this revolution. The code name of our project is <strong>“The Kuoka project”</strong>",
@@ -124,14 +125,14 @@ const EnglishLocale = {
         id: 3,
         name: "Tezos Ghana",
         launched: "October 2021",
-        status: "Bond Needed",
+        status: "Active",
         address: "tz3cF8X5V6DGBdZCC1hoqLzjtq95BcDvDKqe",
         details: "https://tzstats.com/tz3cF8X5V6DGBdZCC1hoqLzjtq95BcDvDKqe",
       },
       {
         id: 4,
         name: "Tezos Senegal",
-        launched: "Not yet",
+        launched: "Launched",
         status: "In progress",
         address: null,
         details: null,
@@ -148,7 +149,6 @@ const EnglishLocale = {
   },
   grants: {
     title: "Tezos Africa Grants",
-    subtitle: "Tezos Africa Small Grants Report",
     pastGrants: {
       title: "Beneficiaries So Far",
       grants: [
