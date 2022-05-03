@@ -1,11 +1,13 @@
-export default {
+const EnglishLocale = {
   nav: [
     { id: 1, title: "About us", path: "#about" },
-    { id: 1, title: "What's Tezos", path: "#tezos" },
-    { id: 1, title: "Our Team", path: "#team" },
-    { id: 1, title: "Partners", path: "#partners" },
-    { id: 1, title: "Hackathon", path: "#hackathon" },
-    { id: 1, title: "Events", path: "#events" },
+    { id: 2, title: "What's Tezos", path: "#tezos" },
+    { id: 3, title: "Bakers", path: "#bakers" },
+    { id: 4, title: "Grants", path: "#grants" },
+    { id: 5, title: "Our Team", path: "#team" },
+    { id: 6, title: "Partners", path: "#partners" },
+    { id: 7, title: "Hackathon", path: "#hackathon" },
+    { id: 8, title: "Events", path: "#events" },
   ],
   navHome: "Home",
   navBlog: "Blog",
@@ -97,6 +99,137 @@ export default {
       },
     ],
   },
+  bakers: {
+    title: "Bakers",
+    description:
+      "In 2021, the Tezos Africa community & friends set out to participate in the Tezos protocol decentralization by launching as many bakers as possible throughout the continent. We knew this would add African voices when voting happened on governance proposals as well as provide geographical decentralisation. We believe it also gives Tezos a unique place in the Blockchain ecosystem as not many others can claim to have mining activities in Africa. We are dreamers aiming to have Africa at the forefront of this revolution. The code name of our project is <strong>“The Kuoka project”</strong>",
+    availableBakers: [
+      {
+        id: 1,
+        name: "Tezos Nigeria",
+        launched: "February 2021",
+        status: "Active",
+        address: "tz1QGtMpkbdSM8Y1eHTru3WY51sXhFikbaAC",
+        details: "https://tzstats.com/tz1QGtMpkbdSM8Y1eHTru3WY51sXhFikbaAC",
+      },
+      {
+        id: 2,
+        name: "Tezos Cameroon",
+        launched: "April 2021",
+        status: "Active",
+        address: "tz1hWB6QV5GBQKdEJN8EowHhLJyCMPhH18sA",
+        details: "https://tzstats.com/tz1hWB6QV5GBQKdEJN8EowHhLJyCMPhH18sA",
+      },
+      {
+        id: 3,
+        name: "Tezos Ghana",
+        launched: "October 2021",
+        status: "Bond Needed",
+        address: "tz3cF8X5V6DGBdZCC1hoqLzjtq95BcDvDKqe",
+        details: "https://tzstats.com/tz3cF8X5V6DGBdZCC1hoqLzjtq95BcDvDKqe",
+      },
+      {
+        id: 4,
+        name: "Tezos Senegal",
+        launched: "Not yet",
+        status: "In progress",
+        address: null,
+        details: null,
+      },
+      {
+        id: 5,
+        name: "Tezos Tunisia",
+        launched: "Not Yet",
+        status: "In progress",
+        address: null,
+        details: null,
+      },
+    ],
+  },
+  grants: {
+    title: "Tezos Africa Grants",
+    subtitle: "Tezos Africa Small Grants Report",
+    pastGrants: {
+      title: "Beneficiaries So Far",
+      grants: [
+        {
+          id: 1,
+          title: "Grant 1",
+          details: [
+            "Our first ever Tezos Africa small grant was given to Tezos Ghana for their baker project.",
+            "A total amount of 800 tez valued $2,936.00 was sent to their baker on the 6th of December, 2021.",
+          ],
+          link: {
+            linkDesciption: "Link To Baker Address:",
+            url: "https://tzstats.com/tz3cF8X5V6DGBdZCC1hoqLzjtq95BcDvDKqe",
+            linkText: "Visit Baker",
+          },
+        },
+        {
+          id: 2,
+          title: "Grant 2",
+          details: [
+            "The next small grant was given to Tezos Senegal for their baker project.",
+            "A total amount of 800 tez valued at $3,175.57 was sent to their baker on the 6th of December, 2021.",
+          ],
+          link: {
+            linkDesciption: "Link To Baker Address:",
+            url: "https://tzstats.com/tz1VJQr7EtCH8KWtd5etEq6vw1oyAtJmMVd3",
+            linkText: "Visit Baker",
+          },
+        },
+        {
+          id: 3,
+          title: "Grant 3",
+          details: [
+            "The third grant was given to Paperless Softwares from Ghana.",
+            "The grant is to help achieve their objective of building a simple web application which allows users to vote or organise elections on the Tezos Blockchain.",
+            "A total amount of $5000 was awarded and an installment of 948 tez valued at $3,000 was sent to their wallet on the 20th of april,2022.",
+          ],
+          link: {
+            linkDesciption: "Website Link:",
+            url: "https://voted-ui.vercel.app",
+            linkText: "View Application",
+          },
+        },
+        {
+          id: 4,
+          title: "Grant 4",
+          details: [
+            "The fourth grant was given to Team Heisenberg from Tezos Tuinisia.",
+            "The grant is to help achieve their objective of building a web application which allows users to create and answer surveys on the Tezos Blockchain.",
+            "A total amount of $5000 was awarded and an installment of 948 tez valued at $3,000 was sent to their wallet on the 20th of april,2022.",
+          ],
+          link: {
+            linkDesciption: "Website Link:",
+            url: "https://survey.texpect.fr",
+            linkText: "View Application",
+          },
+        },
+      ],
+    },
+    upcomingGrants: {
+      title: "Upcoming Grants",
+      grants: [
+        {
+          id: 5,
+          title: "Grant 5",
+          details: [
+            "The grant will be given to Smartland from Tezos Cameroon. This will help in building an online land title directory platform on the Tezos Blockchain.",
+          ],
+          link: null,
+        },
+        {
+          id: 6,
+          title: "Grant 6",
+          details: [
+            "The grant will be given to Tezos Tunisia for their baker project.",
+          ],
+          link: null,
+        },
+      ],
+    },
+  },
   team: {
     title: "Our Team",
     subtitle:
@@ -155,6 +288,12 @@ export default {
         name: "Leonard Mutambanengwe",
         position: "Lead, Zimbabwe",
       },
+      {
+        id: 14,
+        img: "15.jpg",
+        name: "Kamala Immaculate",
+        position: "Lead, Tanzania",
+      },
     ],
   },
   partners: {
@@ -163,11 +302,70 @@ export default {
       "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
   },
   hackathon: {
-    title: "Upcoming hackathon",
+    title: "Past hackathons",
     hacky: [
       {
         id: 1,
         title: "Tezos Afrikathon 2021",
+        coverImage:
+          "https://images.unsplash.com/photo-1456428746267-a1756408f782?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2670&q=80",
+        excerpt:
+          "Tezos Afrikathon is a two-week event where participants will have the opportunity to ignite their creativity and build awesome products and solutions on the Tezos Blockchain.",
+        about: {
+          title: "About the event",
+          text: "Tezos Afrikathon is a two-week event where participants will have the opportunity to ignite their creativity and build awesome products and solutions on the Tezos Blockchain. It will be virtual and begin from 29th November and end on the 13th of December, 2021. It is absolutely free to participate in this Hackathon and a plethora of resources will also be provided to equip all participants.",
+        },
+        register: {
+          title: "Registration process & shortlisting",
+          text: "Registration period spans from 19th to 26th of November, 2021. During this period all interested teams and individuals will have to fill the form in order to participate in the hackathon. <br /> <span style='text-decoration: underline;'>Applications open</span>: 19th November, 20121 at 12am GMT <br /> <span style='text-decoration: underline;'>Applications close</span>: 26th November, 2021 at 11:59pm GMT <br> <br> After registrations close, the various leads of the chapters will go through the applications submitted and the participating teams will be announced on the 27th of November, 2021. <span style='font-weight: bold;'>Kindly note that there is no selection, all the teams who apply are automatically qualified to participate in the Hackathon.</span>",
+        },
+        kicks: {
+          title: "Hackathon kicks off on Chapter level",
+          text: "The hackathon will kick off officially on the 29th of November, 2021. The hackathon will last for a two week period spanning from the 29th of November and it will end on the 13th of December. During the two week period, there will be a mid-review presentation on the 6th of December and the hackathon will end with a final presentation plus a demo on the 13th of December. A jury will select the winners during the final presentation. The jury will consist of the Chapter leads and other experts. The decision of the jury would be final and abiding.",
+        },
+        rules: {
+          title: "RULES of the Hackathon",
+          list: [
+            "A team should have a minimum of 2 members and maximum of 4 members.",
+            "Projects will be built from the scratch only and during the given two-week period hence no pre-built project will be accepted.",
+            "Chapter leads will serve as mentors and provide resources as a form of guide or assistance.",
+            "Maintain a positive and respectful attitude towards fellow participants and mentors throughout the event.",
+            "Any decision made by the judges will be final.",
+          ],
+        },
+        users: {
+          title: "End User Applications can be built around:",
+          list: [
+            "Collectibles",
+            "Communication applications",
+            "Creator tokenization",
+            "Crowdfunding",
+            "Decentralized Finance",
+            "Gaming & Metaverse",
+            "NFTS",
+            "Payment solutions",
+            "Smart contract templates ",
+            "Others (health, agriculture, education, etc.) ",
+          ],
+        },
+        prizes: {
+          title: "Prizes",
+          list: [
+            "First Prize: $200 worth of XTZ",
+            "Second Prize: $100 worth of XTZ",
+            "Third Prize: $50 worth of XTZ",
+          ],
+        },
+        grand: {
+          title: "Grand Prize",
+          text: "All participating teams are eligible for a grant of <span style='font-weight: bold;'>$3000</span> once they are able to present very good projects whether they are part of the top three winners or not. The participating teams will need to resubmit better applications of the same project or can choose to submit a totally new project between Jan 10th and Jan 23rd, 2022 to qualify for the grant. The Grand prize winners will be announced on the 31st of January, 2022.",
+        },
+      },
+      {
+        id: 2,
+        title: "Tezos Cameroon Hackathon 2022",
+        coverImage:
+          "/images/hackathon/tezos-cameroon-hackathon-2022/hack-cover.jpg",
         excerpt:
           "Tezos Afrikathon is a two-week event where participants will have the opportunity to ignite their creativity and build awesome products and solutions on the Tezos Blockchain.",
         about: {
@@ -230,3 +428,5 @@ export default {
     "Tezos is an open-source blockchain cryptocurrency & smart contracts platform for assets and applications backed by a global community of validators, researchers, and builders. It's secure, upgradable and built to last.",
   copyright: "2021 Tezos Africa. All rights reserved.",
 };
+
+export default EnglishLocale;

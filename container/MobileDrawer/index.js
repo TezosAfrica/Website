@@ -38,14 +38,14 @@ const MobileDrawer = ({ onClose }) => {
       h="100vh"
       w="100%"
       bg="rgba(0,0,0,.7)"
-      d={{ base: "block", md: "none" }}
+      d={{ base: "block", xl: "none" }}
     >
       <MotionBox
         initial={{ x: -400 }}
         animate={{ x: 0, transition: { ...transition, delay: 0.2 } }}
         exit={{ x: -400, transition: { ...transition } }}
         bg="white"
-        rounded="md"
+        rounded="xl"
         h="100vh"
         w={80}
         p={6}

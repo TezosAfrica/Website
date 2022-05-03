@@ -1,11 +1,11 @@
-export default {
+const FrenchLocale = {
   nav: [
     { id: 1, title: "A Propos", path: "#about" },
-    { id: 1, title: "Tezos", path: "#tezos" },
-    { id: 1, title: "Equipe", path: "#team" },
-    { id: 1, title: "Partenaires", path: "#partners" },
-    { id: 1, title: "Hackathon", path: "#hackathon" },
-    { id: 1, title: "Evénements", path: "#events" },
+    { id: 2, title: "Tezos", path: "#tezos" },
+    { id: 3, title: "Equipe", path: "#team" },
+    { id: 4, title: "Partenaires", path: "#partners" },
+    { id: 5, title: "Hackathon", path: "#hackathon" },
+    { id: 6, title: "Evénements", path: "#events" },
   ],
   navHome: "Accueil",
   navBlog: "Blog",
@@ -180,6 +180,12 @@ export default {
         name: "Leonard Mutambanengwe",
         position: "Chef de file, Zimbabwe",
       },
+      {
+        id: 14,
+        img: "15.jpg",
+        name: "Kamala Immaculate",
+        position: "Chef de file, Tanzania",
+      },
     ],
   },
   partners: {
@@ -188,7 +194,7 @@ export default {
       "Nous nous concentrons sur l'ergonomie et nous vous rencontrons là où vous travaillez. Vous n'êtes qu'à une touche de votre clavier.",
   },
   hackathon: {
-    title: "Hackathons à venir",
+    title: "Vergangener Hackathon",
     hacky: [
       {
         id: 1,
@@ -262,3 +268,5 @@ export default {
     "Tezos est une plateforme open source de crypto-monnaie blockchain et de contrats intelligents pour les actifs et les applications soutenue par une communauté mondiale de validateurs, de chercheurs et de constructeurs. Il est sécurisé, évolutif et conçu pour durer.",
   copyright: "2021 Tezos Afrique. Tous les droits sont réservés.",
 };
+
+export default FrenchLocale;

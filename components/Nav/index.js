@@ -40,12 +40,12 @@ const Nav = ({ onOpen }) => {
       justify="space-between"
       pos="fixed"
       top={0}
-      h={{ base: 16, md: 20 }}
+      h={{ base: 16, xl: 20 }}
       zIndex={100}
       color="white"
       fontWeight="semibold"
       w="100%"
-      px={{ base: 4, md: 20 }}
+      px={{ base: 4, xl: 20 }}
     >
       <NextLink href="/" passHref>
         <Link>
@@ -53,7 +53,7 @@ const Nav = ({ onOpen }) => {
         </Link>
       </NextLink>
 
-      <Box d={{ base: "block", md: "none" }}>
+      <Box d={{ base: "block", xl: "none" }}>
         <IconButton
           variant="ghost"
           aria-label="Menu Button"
@@ -68,7 +68,7 @@ const Nav = ({ onOpen }) => {
         animate="show"
         spacing="2rem"
         as="nav"
-        d={{ base: "none", md: "flex" }}
+        d={{ base: "none", xl: "flex" }}
       >
         <NextLink href="/" passHref locale={locale}>
           <MotionLink _hover={{ textDecor: "none" }} variants={item}>

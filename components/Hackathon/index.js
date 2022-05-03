@@ -38,7 +38,7 @@ const Hackathon = ({ translate }) => {
                   h="full"
                   w="full"
                   fit="cover"
-                  src="https://images.unsplash.com/photo-1456428746267-a1756408f782?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2670&q=80"
+                  src={item.coverImage}
                   alt="blockchain"
                 />
                 <Box pos="absolute" inset={0} bg="rgba(0,0,0,.4)" />

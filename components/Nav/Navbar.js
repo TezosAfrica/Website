@@ -34,8 +34,8 @@ const Navbar = ({ onOpen }) => {
       w="100%"
       zIndex={10}
       color="white"
-      px={{ base: 4, md: 20 }}
-      h={{ base: 16, md: 20 }}
+      px={{ base: 4, xl: 20 }}
+      h={{ base: 16, xl: 20 }}
     >
       <NextLink href="/" passHref>
         <Link>
@@ -43,7 +43,7 @@ const Navbar = ({ onOpen }) => {
         </Link>
       </NextLink>
 
-      <Box d={{ base: "block", md: "none" }}>
+      <Box d={{ base: "block", xl: "none" }}>
         <IconButton
           variant="ghost"
           aria-label="Menu Button"
@@ -55,7 +55,7 @@ const Navbar = ({ onOpen }) => {
       <MotionHStack
         spacing="2rem"
         as="nav"
-        d={{ base: "none", md: "flex" }}
+        d={{ base: "none", xl: "flex" }}
         fontWeight="bold"
       >
         <NextLink href="/" passHref locale={locale}>

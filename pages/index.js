@@ -6,6 +6,7 @@ import "@splidejs/splide/dist/css/themes/splide-skyblue.min.css";
 import Header from "@components/Header";
 import Features from "@components/Features";
 import About from "@components/About";
+import Bakers from "@components/Bakers";
 import Teams from "@components/Teams";
 import Partners from "@components/Partners";
 import Events from "@components/Events";
@@ -15,6 +16,7 @@ import Hackathon from "@components/Hackathon";
 import { useRouter } from "next/router";
 import fr from "../locales/fr";
 import en from "../locales/en";
+import Grants from "@components/Grants";
 
 export default function Home() {
   const [loading, setLoading] = React.useState(true);
@@ -39,6 +41,8 @@ export default function Home() {
               <Stack>
                 <About translate={t} />
                 <Features translate={t} />
+                <Bakers translate={t} />
+                <Grants translate={t} />
                 <Teams translate={t} />
                 <Partners translate={t} />
                 <Hackathon translate={t} />
