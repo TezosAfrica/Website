@@ -132,7 +132,7 @@ const EnglishLocale = {
       {
         id: 4,
         name: "Tezos Senegal",
-        launched: "Launched",
+        launched: "January 2022",
         status: "In progress",
         address: null,
         details: null,
@@ -140,10 +140,10 @@ const EnglishLocale = {
       {
         id: 5,
         name: "Tezos Tunisia",
-        launched: "Not Yet",
-        status: "In progress",
-        address: null,
-        details: null,
+        launched: "April 2022",
+        status: "Active",
+        address: "tz1LCTAwdwSrRmisS8Mxwz6oj378PSeLzxMf",
+        details: "https://tzstats.com/tz1LCTAwdwSrRmisS8Mxwz6oj378PSeLzxMf",
       },
     ],
   },
