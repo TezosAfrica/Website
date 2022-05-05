@@ -334,6 +334,7 @@ const FrenchLocale = {
           "https://images.unsplash.com/photo-1456428746267-a1756408f782?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2670&q=80",
         excerpt:
           "Le Tezos Afrikathon est un événement de deux semaines au cours duquel les participants auront l'occasion d'enflammer leur créativité et de créer des produits et des solutions géniales sur la blockchain Tezos.",
+        hasAbout: true,
         about: {
           title: "À propos de l'événement",
           text: "Le Tezos Afrikathon est un événement de deux semaines au cours duquel les participants auront l'occasion d'enflammer leur créativité et de créer des produits et des solutions géniales sur la blockchain Tezos. Il sera virtuel et commencera le 29 novembre pour se terminer le 13 décembre 2021. Il est absolument gratuit de participer à ce Hackathon et une pléthore de ressources sera également fournie pour équiper tous les participants. ",
@@ -389,68 +390,111 @@ const FrenchLocale = {
           title: "Grand Prix",
           text: "Toutes les équipes participantes peuvent prétendre à une subvention de <span style='font-weight: bold;'>3000 dollars</span> dès lors qu'elles sont en mesure de présenter de très bons projets, qu'elles fassent partie des trois premiers gagnants ou non. Les équipes participantes devront soumettre à nouveau de meilleures applications du même projet ou peuvent choisir de soumettre un projet totalement nouveau entre le 10 et le 23 janvier pour se qualifier pour la subvention. Les gagnants du grand prix seront annoncés le 31 janvier 2022.",
         },
+        participating: {
+          registered: {
+            title: "Équipes enregistrées",
+            summary:
+              "Sur les 16 équipes qui ont postulé pour l'Afrikathon Tezos, 7 équipes se sont présentées à la journée de démonstration et c'était vraiment excitant de voir des projets construits sur la blockchain Tezos !",
+          },
+          groups: {
+            title: "Équipes participantes",
+            countries: [
+              {
+                country: "Tezos Tunisie Nord Afrique",
+                logo: "/images/branches/tunisia.png",
+                teams: ["L'équipe Heisenberg", "L'équipe Wonderbake"],
+              },
+              {
+                country: "Tezos Kenya",
+                logo: "/images/branches/kenya.jpg",
+                teams: ["L'équipe Sauna"],
+              },
+              {
+                country: "Tezos Cameroon",
+                logo: "/images/branches/cameroon.png",
+                teams: ["Kutaba", "CryptoLions"],
+              },
+              {
+                country: "Tezos Nigeria",
+                logo: "/images/branches/nigeria.png",
+                teams: [
+                  "L'équipe PiSquare",
+                  "L'équipe Phoenix",
+                  "Brickx",
+                  "L'équipe Pandora",
+                ],
+              },
+              {
+                country: "Tezos Cote D'Ivoire",
+                logo: "/images/branches/burkina.png",
+                teams: ["Tezos CI"],
+              },
+              {
+                country: "Tezos Senegal",
+                logo: "/images/branches/senegal.png",
+                teams: ["Diwanu Xarala", "BDCrypto", "The Blockers"],
+              },
+              {
+                country: "Tezos Ghana",
+                logo: "/images/branches/ghana.png",
+                teams: ["Ingenious Game", "BlackStar", "Trace101Africa"],
+              },
+            ],
+          },
+          winners: {
+            title: "Gagnants",
+            imageUrl: "/images/hackathon/tezos-africathon-2021/winners.jpg",
+          },
+        },
       },
       {
-        id: 1,
+        id: 2,
         title: "Hackathon Tezos Cameroun 2022",
         coverImage:
           "/images/hackathon/tezos-cameroon-hackathon-2022/hack-cover.jpg",
         excerpt:
           "Le Tezos Afrikathon est un événement de deux semaines au cours duquel les participants auront l'occasion d'enflammer leur créativité et de créer des produits et des solutions géniales sur la blockchain Tezos.",
-        about: {
-          title: "À propos de l'événement",
-          text: "Le Tezos Afrikathon est un événement de deux semaines au cours duquel les participants auront l'occasion d'enflammer leur créativité et de créer des produits et des solutions géniales sur la blockchain Tezos. Il sera virtuel et commencera le 29 novembre pour se terminer le 13 décembre 2021. Il est absolument gratuit de participer à ce Hackathon et une pléthore de ressources sera également fournie pour équiper tous les participants. ",
-        },
-        register: {
-          title: "Processus d'inscription et présélection",
-          text:
-            "La période d'inscription s'étend du 19 au 26 novembre 2021. Durant cette période, toutes les équipes et personnes intéressées devront remplir le formulaire afin de participer au hackathon.\n" +
-            "<br /><span style='text-decoration: underline'>Ouverture des candidatures</span> : 19 novembre 20121 à 12h00 GMT\n" +
-            "<br /><span style='text-decoration: underline'>Clôture des candidatures</span> : 26 novembre 2021 à 23h59 GMT.\n" +
-            "\n" +
-            "<br /> <br /> Après la clôture des inscriptions, les différents responsables des chapitres examineront les candidatures soumises et les équipes participantes seront annoncées le 27 novembre 2021. <span style='font-weight: bold'>Veuillez noter qu'il n'y a pas de sélection, toutes les équipes qui s'inscrivent sont automatiquement qualifiées pour participer au Hackathon.</span>",
-        },
-        kicks: {
-          title: "Le hackathon démarre au niveau du chapitre",
-          text: "Le hackathon débutera officiellement le 29 novembre 2021. Le hackathon durera deux semaines, du 29 novembre au 13 décembre. Au cours de ces deux semaines, il y aura une présentation intermédiaire le 6 décembre et le hackathon se terminera par une présentation finale et une démo le 13 décembre. Un jury sélectionnera les gagnants lors de la présentation finale. Le jury sera composé des chefs de chapitre et d'autres experts. La décision du jury sera finale et irrévocable.",
-        },
-        rules: {
-          title: "RÈGLES du Hackathon",
-          list: [
-            "Une équipe doit être composée d'un minimum de 2 membres et d'un maximum de 4 membres.",
-            "Les projets seront construits à partir de zéro uniquement et pendant la période donnée de deux semaines. Aucun projet préétabli ne sera accepté.",
-            "Les responsables de chapitre serviront de mentors et fourniront des ressources sous forme de guide ou d'assistance.",
-            "Maintenir une attitude positive et respectueuse envers les autres participants et les mentors tout au long de l'événement.",
-            "Toute décision prise par les juges sera définitive.",
-          ],
-        },
-        users: {
-          title:
-            "Les applications de l'utilisateur final peuvent être construites autour:",
-          list: [
-            "Pièces de collection",
-            "Applications de communication",
-            "Tokenisation du créateur",
-            "Crowdfunding",
-            "Finance décentralisée",
-            "Gaming & Metaverse",
-            "NFTS",
-            "Solutions de paiement",
-            "Modèles de contrats intelligents",
-            "Autres (santé, agriculture, éducation, etc.)",
-          ],
-        },
-        prizes: {
-          title: "Prix",
-          list: [
-            "Premier prix : 200 $ de produits XTZ",
-            "Deuxième prix : 100 $ de produits XTZ",
-            "Troisième prix : 50 $ de produits XTZ",
-          ],
-        },
-        grand: {
-          title: "Grand Prix",
-          text: "Toutes les équipes participantes peuvent prétendre à une subvention de <span style='font-weight: bold;'>3000 dollars</span> dès lors qu'elles sont en mesure de présenter de très bons projets, qu'elles fassent partie des trois premiers gagnants ou non. Les équipes participantes devront soumettre à nouveau de meilleures applications du même projet ou peuvent choisir de soumettre un projet totalement nouveau entre le 10 et le 23 janvier pour se qualifier pour la subvention. Les gagnants du grand prix seront annoncés le 31 janvier 2022.",
+        hasAbout: false,
+        participating: {
+          groupsTable: {
+            title: "Équipes participantes",
+            groups: [
+              {
+                teamName: "CIIA",
+                projectDomain: "Industrie alimentaire",
+              },
+              {
+                teamName: "Crypto Investments",
+                projectDomain: "Monnaies cryptées",
+              },
+              {
+                teamName: "DPRM",
+                projectDomain: "Santé",
+              },
+              {
+                teamName: "KOVAMI",
+                projectDomain: "Assurance",
+              },
+              {
+                teamName: "SMARTLAND",
+                projectDomain: "Immobilier",
+              },
+              {
+                teamName: "PHOENIX",
+                projectDomain: "Agriculture",
+              },
+              {
+                teamName: "TRUST SUPPLY",
+                projectDomain: "Contrôle de la qualité de la chaîne d'approvisionnement",
+              },
+            ],
+          },
+          winners: {
+            title: "Gagnants",
+            text: "Une subvention sera accordée à SMARTLAND par Tezos Cameroun. Elle permettra de construire une plateforme de répertoire de titres fonciers en ligne sur la blockchain Tezos.",
+            imageUrl:
+              "/images/hackathon/tezos-cameroon-hackathon-2022/winners.jpg",
+          },
         },
       },
     ],

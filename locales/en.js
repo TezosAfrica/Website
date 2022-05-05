@@ -311,6 +311,7 @@ const EnglishLocale = {
           "https://images.unsplash.com/photo-1456428746267-a1756408f782?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2670&q=80",
         excerpt:
           "Tezos Afrikathon is a two-week event where participants will have the opportunity to ignite their creativity and build awesome products and solutions on the Tezos Blockchain.",
+        hasAbout: true,
         about: {
           title: "About the event",
           text: "Tezos Afrikathon is a two-week event where participants will have the opportunity to ignite their creativity and build awesome products and solutions on the Tezos Blockchain. It will be virtual and begin from 29th November and end on the 13th of December, 2021. It is absolutely free to participate in this Hackathon and a plethora of resources will also be provided to equip all participants.",
@@ -387,7 +388,12 @@ const EnglishLocale = {
               {
                 country: "Tezos Nigeria",
                 logo: "/images/branches/nigeria.png",
-                teams: ["Team PiSquare", "Team Phoenix", "Brickx", "Team Pandora"],
+                teams: [
+                  "Team PiSquare",
+                  "Team Phoenix",
+                  "Brickx",
+                  "Team Pandora",
+                ],
               },
               {
                 country: "Tezos Cote D'Ivoire",
@@ -409,7 +415,7 @@ const EnglishLocale = {
           winners: {
             title: "Winners",
             imageUrl: "/images/hackathon/tezos-africathon-2021/winners.jpg",
-          }
+          },
         },
       },
       {
@@ -419,54 +425,47 @@ const EnglishLocale = {
           "/images/hackathon/tezos-cameroon-hackathon-2022/hack-cover.jpg",
         excerpt:
           "Tezos Afrikathon is a two-week event where participants will have the opportunity to ignite their creativity and build awesome products and solutions on the Tezos Blockchain.",
-        about: {
-          title: "About the event",
-          text: "Tezos Afrikathon is a two-week event where participants will have the opportunity to ignite their creativity and build awesome products and solutions on the Tezos Blockchain. It will be virtual and begin from 29th November and end on the 13th of December, 2021. It is absolutely free to participate in this Hackathon and a plethora of resources will also be provided to equip all participants.",
-        },
-        register: {
-          title: "Registration process & shortlisting",
-          text: "Registration period spans from 19th to 26th of November, 2021. During this period all interested teams and individuals will have to fill the form in order to participate in the hackathon. <br /> <span style='text-decoration: underline;'>Applications open</span>: 19th November, 20121 at 12am GMT <br /> <span style='text-decoration: underline;'>Applications close</span>: 26th November, 2021 at 11:59pm GMT <br> <br> After registrations close, the various leads of the chapters will go through the applications submitted and the participating teams will be announced on the 27th of November, 2021. <span style='font-weight: bold;'>Kindly note that there is no selection, all the teams who apply are automatically qualified to participate in the Hackathon.</span>",
-        },
-        kicks: {
-          title: "Hackathon kicks off on Chapter level",
-          text: "The hackathon will kick off officially on the 29th of November, 2021. The hackathon will last for a two week period spanning from the 29th of November and it will end on the 13th of December. During the two week period, there will be a mid-review presentation on the 6th of December and the hackathon will end with a final presentation plus a demo on the 13th of December. A jury will select the winners during the final presentation. The jury will consist of the Chapter leads and other experts. The decision of the jury would be final and abiding.",
-        },
-        rules: {
-          title: "RULES of the Hackathon",
-          list: [
-            "A team should have a minimum of 2 members and maximum of 4 members.",
-            "Projects will be built from the scratch only and during the given two-week period hence no pre-built project will be accepted.",
-            "Chapter leads will serve as mentors and provide resources as a form of guide or assistance.",
-            "Maintain a positive and respectful attitude towards fellow participants and mentors throughout the event.",
-            "Any decision made by the judges will be final.",
-          ],
-        },
-        users: {
-          title: "End User Applications can be built around:",
-          list: [
-            "Collectibles",
-            "Communication applications",
-            "Creator tokenization",
-            "Crowdfunding",
-            "Decentralized Finance",
-            "Gaming & Metaverse",
-            "NFTS",
-            "Payment solutions",
-            "Smart contract templates ",
-            "Others (health, agriculture, education, etc.) ",
-          ],
-        },
-        prizes: {
-          title: "Prizes",
-          list: [
-            "First Prize: $200 worth of XTZ",
-            "Second Prize: $100 worth of XTZ",
-            "Third Prize: $50 worth of XTZ",
-          ],
-        },
-        grand: {
-          title: "Grand Prize",
-          text: "All participating teams are eligible for a grant of <span style='font-weight: bold;'>$3000</span> once they are able to present very good projects whether they are part of the top three winners or not. The participating teams will need to resubmit better applications of the same project or can choose to submit a totally new project between Jan 10th and Jan 23rd, 2022 to qualify for the grant. The Grand prize winners will be announced on the 31st of January, 2022.",
+        hasAbout: false,
+        participating: {
+          groupsTable: {
+            title: "Participating Teams",
+            groups: [
+              {
+                teamName: "CIIA",
+                projectDomain: "Food Industry",
+              },
+              {
+                teamName: "Crypto Investments",
+                projectDomain: "Cryptocurrencies",
+              },
+              {
+                teamName: "DPRM",
+                projectDomain: "Health",
+              },
+              {
+                teamName: "KOVAMI",
+                projectDomain: "Insurance",
+              },
+              {
+                teamName: "SMARTLAND",
+                projectDomain: "Real Estate",
+              },
+              {
+                teamName: "PHOENIX",
+                projectDomain: "Agriculture",
+              },
+              {
+                teamName: "TRUST SUPPLY",
+                projectDomain: "Supply Chain Quality Control",
+              },
+            ],
+          },
+          winners: {
+            title: "Winners",
+            text: "A grant will be given to SMARTLAND from Tezos Cameroon. This will help in building an online land title directory platform on the Tezos Blockchain.",
+            imageUrl:
+              "/images/hackathon/tezos-cameroon-hackathon-2022/winners.jpg",
+          },
         },
       },
     ],
