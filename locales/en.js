@@ -418,56 +418,56 @@ const EnglishLocale = {
           },
         },
       },
-      {
-        id: 2,
-        title: "Tezos Cameroon Hackathon 2022",
-        coverImage:
-          "/images/hackathon/tezos-cameroon-hackathon-2022/hack-cover.jpg",
-        excerpt:
-          "Tezos Afrikathon is a two-week event where participants will have the opportunity to ignite their creativity and build awesome products and solutions on the Tezos Blockchain.",
-        hasAbout: false,
-        participating: {
-          groupsTable: {
-            title: "Participating Teams",
-            groups: [
-              {
-                teamName: "CIIA",
-                projectDomain: "Food Industry",
-              },
-              {
-                teamName: "Crypto Investments",
-                projectDomain: "Cryptocurrencies",
-              },
-              {
-                teamName: "DPRM",
-                projectDomain: "Health",
-              },
-              {
-                teamName: "KOVAMI",
-                projectDomain: "Insurance",
-              },
-              {
-                teamName: "SMARTLAND",
-                projectDomain: "Real Estate",
-              },
-              {
-                teamName: "PHOENIX",
-                projectDomain: "Agriculture",
-              },
-              {
-                teamName: "TRUST SUPPLY",
-                projectDomain: "Supply Chain Quality Control",
-              },
-            ],
-          },
-          winners: {
-            title: "Winners",
-            text: "A grant will be given to SMARTLAND from Tezos Cameroon. This will help in building an online land title directory platform on the Tezos Blockchain.",
-            imageUrl:
-              "/images/hackathon/tezos-cameroon-hackathon-2022/winners.jpg",
-          },
-        },
-      },
+      // {
+      //   id: 2,
+      //   title: "Tezos Cameroon Hackathon 2022",
+      //   coverImage:
+      //     "/images/hackathon/tezos-cameroon-hackathon-2022/hack-cover.jpg",
+      //   excerpt:
+      //     "Tezos Afrikathon is a two-week event where participants will have the opportunity to ignite their creativity and build awesome products and solutions on the Tezos Blockchain.",
+      //   hasAbout: false,
+      //   participating: {
+      //     groupsTable: {
+      //       title: "Participating Teams",
+      //       groups: [
+      //         {
+      //           teamName: "CIIA",
+      //           projectDomain: "Food Industry",
+      //         },
+      //         {
+      //           teamName: "Crypto Investments",
+      //           projectDomain: "Cryptocurrencies",
+      //         },
+      //         {
+      //           teamName: "DPRM",
+      //           projectDomain: "Health",
+      //         },
+      //         {
+      //           teamName: "KOVAMI",
+      //           projectDomain: "Insurance",
+      //         },
+      //         {
+      //           teamName: "SMARTLAND",
+      //           projectDomain: "Real Estate",
+      //         },
+      //         {
+      //           teamName: "PHOENIX",
+      //           projectDomain: "Agriculture",
+      //         },
+      //         {
+      //           teamName: "TRUST SUPPLY",
+      //           projectDomain: "Supply Chain Quality Control",
+      //         },
+      //       ],
+      //     },
+      //     winners: {
+      //       title: "Winners",
+      //       text: "A grant will be given to SMARTLAND from Tezos Cameroon. This will help in building an online land title directory platform on the Tezos Blockchain.",
+      //       imageUrl:
+      //         "/images/hackathon/tezos-cameroon-hackathon-2022/winners.jpg",
+      //     },
+      //   },
+      // },
     ],
   },
   events: {
