@@ -191,6 +191,7 @@ export const teams = [
   { id: 12, img: "13.jpg", name: "Brian Ahimbisibwe", position: "Lead, Uganda" },
   { id: 13, img: "14.png", name: "Leonard Mutambanengwe", position: "Lead, Zimbabwe" },
   { id: 14, img: "15.jpg", name: "Kamala Immaculate", position: "Lead, Tanzania" },
+  { id: 15, img: "16.jpg", name: "Togo Lead", position: "Lead, Togo" },
 ];
 
 export const countries = [
@@ -205,6 +206,7 @@ export const countries = [
   { id: 9, img: "uganda.png", link: "#" },
   { id: 10, img: "zimbabwe.jpg", link: "#" },
   { id: 11, img: "tanzania.png", link: "#" },
+  { id: 12, img: "togo.jpg", link: "#" },
 ];
 
 export const events = [

@@ -294,6 +294,12 @@ const EnglishLocale = {
         name: "Kamala Immaculate",
         position: "Lead, Tanzania",
       },
+      {
+        id: 15,
+        img: "16.jpg",
+        name: "Togo Lead",
+        position: "Lead, Togo",
+      },
     ],
   },
   partners: {

@@ -317,6 +317,12 @@ const FrenchLocale = {
         name: "Kamala Immaculate",
         position: "Chef de file, Tanzania",
       },
+      {
+        id: 15,
+        img: "16.jpg",
+        name: "Togo Lead",
+        position: "Chef de file, Togo",
+      },
     ],
   },
   partners: {
