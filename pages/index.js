@@ -16,7 +16,7 @@ import Hackathon from "@components/Hackathon";
 import { useRouter } from "next/router";
 import fr from "../locales/fr";
 import en from "../locales/en";
-import Grants from "@components/Grants";
+// import Grants from "@components/Grants";
 
 export default function Home() {
   const [loading, setLoading] = React.useState(true);
@@ -42,7 +42,7 @@ export default function Home() {
                 <About translate={t} />
                 <Features translate={t} />
                 <Bakers translate={t} />
-                <Grants translate={t} />
+                {/* <Grants translate={t} /> */}
                 <Teams translate={t} />
                 <Partners translate={t} />
                 <Hackathon translate={t} />

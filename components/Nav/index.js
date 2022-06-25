@@ -76,15 +76,23 @@ const Nav = ({ onOpen }) => {
           </MotionLink>
         </NextLink>
 
-        {t.nav.map((item) => (
+        {t.nav.map((navItem) => (
           <MotionLink
-            key={item.id}
+            key={navItem.id}
             _hover={{ textDecor: "none" }}
             variants={item}
-            href={pathname === "/" ? item.path : "/"}
+            href={
+              pathname === "/"
+                ? locale === "fr"
+                  ? `/fr${navItem.path}`
+                  : navItem.path
+                : locale === "fr"
+                ? "/fr"
+                : "/"
+            }
             locale={locale}
           >
-            {item.title}
+            {navItem.title}
           </MotionLink>
         ))}
 
@@ -100,8 +108,12 @@ const Nav = ({ onOpen }) => {
           _active={{ color: "black" }}
           w={{ md: 28 }}
         >
-          <option value="en">English</option>
-          <option value="fr">French</option>
+          <option value="en" style={{ color: "black" }}>
+            English
+          </option>
+          <option value="fr" style={{ color: "black" }}>
+            French
+          </option>
         </Select>
       </MotionHStack>
     </MotionFlex>

@@ -62,15 +62,15 @@ const Navbar = ({ onOpen }) => {
           <MotionLink _hover={{ textDecor: "none" }}>{t.navHome}</MotionLink>
         </NextLink>
 
-        {t.nav.map((item) => (
+        {t.nav.map((navItem) => (
           <MotionLink
-            key={item.id}
+            key={navItem.id}
             _hover={{ textDecor: "none" }}
-            variants={item}
-            href={pathname === "/" ? item.path : "/"}
+            // variants={item}
+            href={pathname === "/" ? navItem.path : "/"}
             locale={locale}
           >
-            {item.title}
+            {navItem.title}
           </MotionLink>
         ))}
 

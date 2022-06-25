@@ -11,7 +11,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { MotionLink } from "@utils/constants";
-import { FaFacebookSquare, FaTwitter } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 import { useRouter } from "next/router";
 
 const Footer = ({ translate }) => {
@@ -34,10 +34,7 @@ const Footer = ({ translate }) => {
           </Text>
 
           <HStack align="center" mb={8} spacing="1rem">
-            <Link href="#">
-              <Icon boxSize={6} as={FaFacebookSquare} />
-            </Link>
-            <Link href="#">
+            <Link href="https://twitter.com/TezosInAfrica" target={'_blank'}>
               <Icon boxSize={6} as={FaTwitter} />
             </Link>
           </HStack>

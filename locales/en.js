@@ -3,7 +3,7 @@ const EnglishLocale = {
     { id: 1, title: "About us", path: "#about" },
     { id: 2, title: "What's Tezos", path: "#tezos" },
     { id: 3, title: "Bakers", path: "#bakers" },
-    { id: 4, title: "Grants", path: "#grants" },
+    { id: 4, title: "Grants", path: "/grants" },
     { id: 5, title: "Our Team", path: "#team" },
     { id: 6, title: "Partners", path: "#partners" },
     { id: 7, title: "Hackathon", path: "#hackathon" },
@@ -133,9 +133,9 @@ const EnglishLocale = {
         id: 4,
         name: "Tezos Senegal",
         launched: "January 2022",
-        status: "In progress",
-        address: null,
-        details: null,
+        status: "Active",
+        address: "tz1VJQr7EtCH8KWtd5etEq6vw1oyAtJmMVd3",
+        details: "https://tzstats,com/tz1VJQr7EtCH8KWtd5etEq6vw1oyAtJmMVd3",
       },
       {
         id: 5,
@@ -148,12 +148,20 @@ const EnglishLocale = {
     ],
   },
   grants: {
-    title: "Tezos Africa Grants",
+    header: {
+      title: 'Small Grants Program',
+      about: 'The small grants program is an experimental regional effort focused on providing funding for low cost, intermittent, or experimental projects in the Tezos ecosystem. While small in size they are an important step toward maintaining the health of the ecosystem and the pursuit of progress as our communities grow.',
+      grantApplicationBtnText: 'Grant Application',
+      beneficiariesLinkText: 'Beneficiaries',
+      upcomingGrantsLinkText: 'Upcoming Grants',
+    },
+    title: "Grants Updates",
     pastGrants: {
       title: "Beneficiaries So Far",
       grants: [
         {
           id: 1,
+          icon: 'grants/logos/ghana.png',
           title: "Grant 1",
           details: [
             "Our first ever Tezos Africa small grant was given to Tezos Ghana for their baker project.",
@@ -167,6 +175,7 @@ const EnglishLocale = {
         },
         {
           id: 2,
+          icon: 'grants/logos/senegal.png',
           title: "Grant 2",
           details: [
             "The next small grant was given to Tezos Senegal for their baker project.",
@@ -181,6 +190,7 @@ const EnglishLocale = {
         {
           id: 3,
           title: "Grant 3",
+          icon: 'grants/logos/paperlesslogo.png',
           details: [
             "The third grant was given to Paperless Softwares from Ghana.",
             "The grant is to help achieve their objective of building a simple web application which allows users to vote or organise elections on the Tezos Blockchain.",
@@ -188,13 +198,14 @@ const EnglishLocale = {
           ],
           link: {
             linkDesciption: "Website Link:",
-            url: "https://voted-ui.vercel.app",
+            url: "https://voted.web.app/",
             linkText: "View Application",
           },
         },
         {
           id: 4,
           title: "Grant 4",
+          icon: 'grants/logos/surveychainlogo.svg',
           details: [
             "The fourth grant was given to Team Heisenberg from Tezos Tuinisia.",
             "The grant is to help achieve their objective of building a web application which allows users to create and answer surveys on the Tezos Blockchain.",
@@ -213,6 +224,7 @@ const EnglishLocale = {
       grants: [
         {
           id: 5,
+          icon: 'grants/logos/cameroon.png',
           title: "Grant 5",
           details: [
             "The grant will be given to Smartland from Tezos Cameroon. This will help in building an online land title directory platform on the Tezos Blockchain.",
@@ -221,6 +233,7 @@ const EnglishLocale = {
         },
         {
           id: 6,
+          icon: 'grants/logos/tunisia.png',
           title: "Grant 6",
           details: [
             "The grant will be given to Tezos Tunisia for their baker project.",
@@ -297,7 +310,7 @@ const EnglishLocale = {
       {
         id: 15,
         img: "16.jpg",
-        name: "Togo Lead",
+        name: "Sebastien Akparo",
         position: "Lead, Togo",
       },
     ],

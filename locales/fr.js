@@ -2,10 +2,12 @@ const FrenchLocale = {
   nav: [
     { id: 1, title: "A Propos", path: "#about" },
     { id: 2, title: "Tezos", path: "#tezos" },
-    { id: 3, title: "Equipe", path: "#team" },
-    { id: 4, title: "Partenaires", path: "#partners" },
-    { id: 5, title: "Hackathon", path: "#hackathon" },
-    { id: 6, title: "Evénements", path: "#events" },
+    { id: 3, title: "Boulangers", path: "#bakers" },
+    { id: 4, title: "Subventions", path: "/grants" },
+    { id: 5, title: "Equipe", path: "#team" },
+    { id: 6, title: "Partenaires", path: "#partners" },
+    { id: 7, title: "Hackathon", path: "#hackathon" },
+    { id: 8, title: "Evénements", path: "#events" },
   ],
   navHome: "Accueil",
   navBlog: "Blog",
@@ -130,10 +132,10 @@ const FrenchLocale = {
       {
         id: 4,
         name: "Tezos Senegal",
-        launched: "Lancé",
-        status: "En cours",
-        address: null,
-        details: null,
+        launched: "Janvier 2022",
+        status: "Actif",
+        address: "tz1VJQr7EtCH8KWtd5etEq6vw1oyAtJmMVd3",
+        details: "https://tzstats,com/tz1VJQr7EtCH8KWtd5etEq6vw1oyAtJmMVd3",
       },
       {
         id: 5,
@@ -146,12 +148,20 @@ const FrenchLocale = {
     ],
   },
   grants: {
-    title: "Subventions Tezos pour l'Afrique",
+    header: {
+      title: 'Programme de petites subventions',
+      about: "Le programme de petites subventions est un effort régional expérimental axé sur le financement de projets à faible coût, intermittents ou expérimentaux dans l'écosystème Tezos. Bien que de petite taille, ces projets constituent une étape importante vers le maintien de la santé de l'écosystème et la poursuite du progrès au fur et à mesure que nos communautés se développent.",
+      grantApplicationBtnText: 'Demande de subvention',
+      beneficiariesLinkText: 'Bénéficiaires',
+      upcomingGrantsLinkText: 'Subventions à venir',
+    },
+    title: "Mises à jour des subventions",
     pastGrants: {
       title: "Bénéficiaires à ce jour",
       grants: [
         {
           id: 1,
+          icon: 'grants/logos/ghana.png',
           title: "Subvention 1",
           details: [
             "Notre toute première petite subvention Tezos Africa a été accordée à Tezos Ghana pour leur projet de boulangerie.",
@@ -165,6 +175,7 @@ const FrenchLocale = {
         },
         {
           id: 2,
+          icon: 'grants/logos/senegal.png',
           title: "Subvention 2",
           details: [
             "La prochaine petite subvention a été accordée à Tezos Sénégal pour leur projet de boulangerie.",
@@ -178,6 +189,7 @@ const FrenchLocale = {
         },
         {
           id: 3,
+          icon: 'grants/logos/paperlesslogo.png',
           title: "Subvention 3",
           details: [
             "La troisième subvention a été accordée à Paperless Softwares du Ghana.",
@@ -186,12 +198,13 @@ const FrenchLocale = {
           ],
           link: {
             linkDesciption: "Lien vers le site web :",
-            url: "https://voted-ui.vercel.app",
+            url: "https://voted.web.app/",
             linkText: "Voir l'application",
           },
         },
         {
           id: 4,
+          icon: 'grants/logos/surveychainlogo.svg',
           title: "Subvention 4",
           details: [
             "La quatrième subvention a été accordée à l'équipe Heisenberg de Tezos Tuinisia.",
@@ -211,6 +224,7 @@ const FrenchLocale = {
       grants: [
         {
           id: 5,
+          icon: 'grants/logos/cameroon.png',
           title: "Subvention 5",
           details: [
             "La subvention sera accordée à Smartland de Tezos Cameroun. Elle permettra de construire une plateforme de répertoire de titres fonciers en ligne sur la blockchain Tezos.",
@@ -219,6 +233,7 @@ const FrenchLocale = {
         },
         {
           id: 6,
+          icon: 'grants/logos/tunisia.png',
           title: "Subvention 6",
           details: [
             "La subvention sera accordée à Tezos Tunisie pour leur projet de boulangerie.",
@@ -320,7 +335,7 @@ const FrenchLocale = {
       {
         id: 15,
         img: "16.jpg",
-        name: "Togo Lead",
+        name: "Sebastien Akparo",
         position: "Chef de file, Togo",
       },
     ],

@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ChakraProvider theme={theme}>
-      {pathname === "/" && <Nav scrollTop={scrollTop} onOpen={onOpen} />}
+      {(pathname === "/" || pathname === '/grants') && <Nav scrollTop={scrollTop} onOpen={onOpen} />}
       {(pathname === "/blog" ||
         pathname === "/blog/[slug]" ||
         pathname === "/hackathon/[slug]") && <Navbar onOpen={onOpen} />}

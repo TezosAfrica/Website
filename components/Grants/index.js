@@ -5,7 +5,7 @@ import {
   Text,
   Grid,
   Heading,
-  // Image,
+  Image,
   UnorderedList,
   ListItem,
   Link,
@@ -16,12 +16,12 @@ import { MotionStack } from "@utils/constants";
 
 const Grants = ({ translate }) => {
   return (
-    <Box as="section" id="tezos" py={{ base: 24, md: 32 }}>
+    <Box as="section" id="grants" py={{ base: 24, md: 32 }}>
       <Container maxW="7xl">
         <SectionTitle
           title={translate.grants.title}
         />
-        <Box mt={20}>
+        <Box mt={20} id="beneficiaries">
           <Box mb={10}>
             <Heading as="h4" fontSize={{ md: "3xl" }}>
               {translate.grants.pastGrants.title}
@@ -42,12 +42,13 @@ const Grants = ({ translate }) => {
                 _hover={{ bg: "#f8f9fa" }}
                 transition="background-color 250ms ease-in"
               >
-                {/* <Image
+                <Image
                   src={`/images/${item.icon}`}
                   alt={item.title}
-                  w={10}
-                  h={10}
-                /> */}
+                  w={20}
+                  h={20}
+                  ml="auto"
+                />
                 <Text fontSize={{ base: "lg", md: "xl" }} fontWeight="bold">
                   {item.title}
                 </Text>
@@ -76,7 +77,7 @@ const Grants = ({ translate }) => {
             ))}
           </Grid>
         </Box>
-        <Box mt={20}>
+        <Box mt={20} id="upcoming-grants">
           <Box mb={10}>
             <Heading as="h4" fontSize={{ md: "3xl" }}>
               {translate.grants.upcomingGrants.title}
@@ -97,12 +98,13 @@ const Grants = ({ translate }) => {
                 _hover={{ bg: "#f8f9fa" }}
                 transition="background-color 250ms ease-in"
               >
-                {/* <Image
+                <Image
                   src={`/images/${item.icon}`}
                   alt={item.title}
-                  w={10}
-                  h={10}
-                /> */}
+                  w={20}
+                  h={20}
+                  ml="auto"
+                />
                 <Text fontSize={{ base: "lg", md: "xl" }} fontWeight="bold">
                   {item.title}
                 </Text>

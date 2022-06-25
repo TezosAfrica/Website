@@ -34,7 +34,7 @@ const Header = ({ translate }) => {
       transition={{ ...transition }}
       className="transition-image final"
       bg="brand.red"
-      w="100vw"
+      // w="100vw"
     >
       <MotionBox
         pt={{ base: 20, md: 0 }}
