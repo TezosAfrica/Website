@@ -204,9 +204,9 @@ export const countries = [
   { id: 7, img: "ivorycoast.png", link: "#" },
   { id: 8, img: "kenya.jpg", link: "#" },
   { id: 9, img: "uganda.png", link: "#" },
-  { id: 10, img: "zimbabwe.jpg", link: "#" },
+  { id: 10, img: "zimbabwe.jpg", link: "https://twitter.com/TezosZimbabwe" },
   { id: 11, img: "tanzania.png", link: "#" },
-  { id: 12, img: "togo.jpg", link: "#" },
+  { id: 12, img: "togo.jpg", link: "https://twitter.com/TezosTogo" },
 ];
 
 export const events = [
@@ -235,9 +235,37 @@ export const events = [
     id: 4,
     img: "4.jpg",
     title: "Développement sur la BlockChain Tezos",
-    date: "2021-10-17 ",
+    date: "2021-10-17",
     stat: "Free",
   },
+  // {
+  //   id: 5,
+  //   img: "5.jpg",
+  //   title: "Surviving In The Crypto Space",
+  //   date: "2022-01-29",
+  //   stat: "Free",
+  // },
+  // {
+  //   id: 6,
+  //   img: "6.jpg",
+  //   title: "Crypto Beyond Trading (Part 1)",
+  //   date: "2022-02-24",
+  //   stat: "Free",
+  // },
+  // {
+  //   id: 7,
+  //   img: "7.jpg",
+  //   title: "Crypto Beyond Trading (Part 2)",
+  //   date: "2022-03-30",
+  //   stat: "Free",
+  // },
+  // {
+  //   id: 8,
+  //   img: "8.jpg",
+  //   title: "Building on the Tezos blockchain and how to secure a grant",
+  //   date: "2022-04-28",
+  //   stat: "Free",
+  // },
 ];
 
 export const logos = [

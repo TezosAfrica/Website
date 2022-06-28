@@ -67,7 +67,15 @@ const Navbar = ({ onOpen }) => {
             key={navItem.id}
             _hover={{ textDecor: "none" }}
             // variants={item}
-            href={pathname === "/" ? navItem.path : "/"}
+            href={
+              pathname === "/"
+                ? locale === "fr"
+                  ? `/fr${navItem.path}`
+                  : navItem.path
+                : locale === "fr"
+                ? "/fr"
+                : "/"
+            }
             locale={locale}
           >
             {navItem.title}
