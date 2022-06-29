@@ -7,6 +7,7 @@ import {
   Box,
   Button,
   Stack,
+  Link,
 } from "@chakra-ui/react";
 import {
   headerContainer,
@@ -73,12 +74,16 @@ const Header = ({ translate, locale }) => {
                 </Stack>
 
                 <Button
+                  as={Link}
                   size="lg"
                   mt="8"
                   mb="8"
                   color="white"
                   bg="brand.red"
-                  _hover={{ opacity: 0.8 }}
+                  _hover={{ opacity: 0.8, textDecor: "none" }}
+                  // d="block"
+                  href="https://j28vrpc603f.typeform.com/to/iI2bVpeo"
+                  isExternal
                 >
                   {translate.grants.header.grantApplicationBtnText}
                 </Button>

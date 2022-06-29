@@ -258,7 +258,7 @@ const FrenchLocale = {
         id: 2,
         img: "7.jpg",
         name: "Vicentia Asilevi",
-        position: "Chef de projet, Tezos Afrique ",
+        position: "Directeur des opérations, Tezos Afrique",
       },
       {
         id: 3,

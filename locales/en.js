@@ -258,7 +258,7 @@ const EnglishLocale = {
         id: 2,
         img: "7.jpg",
         name: "Vicentia Asilevi",
-        position: "Project Manager, Tezos Africa",
+        position: "Director of Operations, Tezos Africa",
       },
       { id: 3, img: "3.jpg", name: "Kevin Obam", position: "Lead, Cameroon" },
       { id: 4, img: "4.jpg", name: "Sami Souihi", position: "Lead, Tunisia" },
