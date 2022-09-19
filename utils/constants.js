@@ -178,7 +178,7 @@ export const teams = [
   { id: 4, img: "4.jpg", name: "Sami Souihi", position: "Lead, Tunisia" },
   { id: 5, img: "5.jpg", name: "Frank Deya", position: "Lead, Kenya" },
   { id: 6, img: "6.jpg", name: "Bineta Ngom", position: "Lead, Senegal" },
-  { id: 7, img: "11.jpg", name: "Seth Baah Kusi", position: "Lead, Ghana" },
+  { id: 7, img: "11.jpg", name: "Emmanuel Kusi", position: "Lead, Ghana" },
   {
     id: 9,
     img: "12.jpg",

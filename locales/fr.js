@@ -287,7 +287,7 @@ const FrenchLocale = {
       {
         id: 7,
         img: "11.jpg",
-        name: "Seth Baah Kusi",
+        name: "Emmanuel Kusi",
         position: "Chef de file, Ghana",
       },
       {
